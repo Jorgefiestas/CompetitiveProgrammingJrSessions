@@ -1,0 +1,456 @@
+\documentclass{beamer}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{listings}
+
+\usetheme{metropolis}
+
+\begin{document}
+
+\title{Competitive Programming}
+\subtitle{An introduction to the art...}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{frame}
+    \frametitle{What is Competitive Programming?}
+
+    \begin{itemize}
+        \item It's a sport... a \textbf{\textit{mind sport}}.
+        \item Participants are given problems and they have to create computer programs to solve them.
+        \item There are many types of problems that we will learn \textit{later}...
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{What is ACM-ICPC?}
+
+    \begin{itemize}
+        \item \textbf{I}nterntational \textbf{C}ollegiate \textbf{P}rogramming \textbf{C}ontest
+        \item Thousands of students participate every year and attempt to be \#1 in the world.
+        \item Oporto 2019 $\rightarrow$ Moscow 2020!
+    \end{itemize}
+
+    \begin{center}
+        \textit{``Quite simply, it is the oldest, largest, and most prestigious programming contest in the world.''}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Problem Structure}
+
+    \begin{itemize}
+        \item Title and limitations
+        \item Description
+        \item Input and output (I/O)
+        \item Examples
+    \end{itemize}
+
+    \textbf{Lets see the real thing:}
+    \url{https://codeforces.com/contest/1/problem/A}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Virtual Judges}
+
+    \begin{itemize}
+        \item It is impossible that a human checks all of the users submissions.
+        \item Virtual Judges (VJ) are the ones in charged of validating the correctness of your solution.
+        \item They will run a lot of test cases with your code to make sure it \textbf{ALWAYS} work.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Useful VJs}
+
+    \begin{itemize}
+        \item Codeforces - \url{https://codeforces.com}
+        \item UVA - \url{https://uva.onlinejudge.org}
+        \item Codechef - \url{https://www.codechef.com}
+        \item Vjudge - \url{https://vjudge.net}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Programming Languages}
+
+    \begin{itemize}
+        \item They are the tool that allow us to give instructions to the machine.
+        \item Every programming language has a purpose.
+        \item In competitive programming some languages are \textit{objectively} better than others.
+        \item Not all PLs are allowed in the \textit{ACM-ICPC}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ICPC Allowed Languages}
+
+    \vspace{2mm}
+    \begin{centering}
+        \bgroup
+        \def\arraystretch{5}
+        \setlength\tabcolsep{35pt}.
+        \begin{tabular}{ c c }
+            \includegraphics[width=0.23\linewidth]{images/java} &
+            \includegraphics[width=0.25\linewidth]{images/kotlin} \\
+            \includegraphics[width=0.25\linewidth]{images/python} &
+            \includegraphics[width=0.25\linewidth]{images/cpp}
+        \end{tabular}
+        \egroup
+    \end{centering}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Why C++ is the Best}
+
+    \begin{itemize}
+        \item Lower Level $\rightarrow$ More control
+        \item Allows for better memory management.
+        \item The \textbf{STL Library} is extremely powerful.
+        \item Almost all learning resources are oriented to C++.
+    \end{itemize}
+\end{frame}
+
+\definecolor{darkGreen}{RGB}{56,118,29}
+\begin{frame}
+    \frametitle{Errors - Verdict Information}
+
+    \begin{itemize}
+        \item \textcolor{darkGreen}{\textbf{AC - Accepted}}
+        \item \textcolor{red}{\textbf{WA - Wrong Answer}}
+        \item \textcolor{red}{\textbf{TLE - Time Limit Exceeded}}
+        \item \textcolor{red}{\textbf{RE - Runtime Error}}
+    \end{itemize}
+
+    Others: \url{https://icpcarchive.ecs.baylor.edu/index.php?option=com_content&task=view&id=14&Itemid=30}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Setups \& IDEs}
+
+    \begin{itemize}
+        \item There are 3 main setups:
+        \begin{itemize}
+            \item IDE
+            \item Text Editor
+            \item Console Text Editor
+        \end{itemize}
+        \item What are some advantages and disadvantages of these?
+        \item Do I \textbf{HAVE} to use a CTE?
+    \end{itemize}
+
+    \vspace{5mm}
+
+    \begin{centering}
+        \setlength\tabcolsep{25pt}.
+        \begin{tabular}{ c c c }
+            \includegraphics[width=0.15\linewidth]{images/clion} &
+            \includegraphics[width=0.15\linewidth]{images/sublime} &
+            \includegraphics[width=0.15\linewidth]{images/vim}
+        \end{tabular}
+    \end{centering}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Conclusions}
+
+    \begin{itemize}
+        \item What is competitive programming?
+        \item What is a Virtual Judge?
+        \item Why are we learning C++?
+        \item \emph{Why do \textbf{I} want to get into competitive programming?}
+    \end{itemize}
+\end{frame}
+
+\section{C++ in 2 weeks!}
+
+\begin{frame}
+    \frametitle{What is a Program?}
+
+    \begin{itemize}
+        \item It a sequence of logical and ordered steps that the computer will execute.
+        \item Programs are composed of \textit{variables, functions and instructions}.
+        \item In practice we write programs as files that we then \textit{compile} to make an \textit{executable}.
+        \item For example: \texttt{main.cpp}, \texttt{calc.cpp}, \texttt{whatever.cpp}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Variables}
+
+    \begin{itemize}
+        \item A variable is a value that can change.
+        \item Variables need to be \textit{declared}.
+        \item It has a \textit{unique name} so that the program can identify it.
+        \item Variables are stored in \textit{memory}, with a \textit{fixed} size.
+        \item There are different types of variables or \textit{data types}.
+        \item In \texttt{C++} we need to specify the data type of our variables.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Data Types in C++}
+
+    \begin{table}[]
+        \bgroup
+        \def\arraystretch{1.5}
+        \setlength\tabcolsep{10pt}.
+        \begin{tabular}{l|l|l}
+            \multicolumn{1}{c|}{\textbf{Type}} & \multicolumn{1}{c|}{\textbf{Size}} & \multicolumn{1}{c}{\textbf{Range}} \\ \hline
+            \texttt{short} & 16 bit & $[-2^{15}, 2^{15} - 1]$ \\
+            \texttt{int} & 32 bit & $[-2^{31}, 2^{31} - 1]$ \\
+            \texttt{long long} & 64 bit & $[-2^{63}, 2^{63} - 1]$ \\
+            \texttt{float} & 32 bit & $[-3.4 \times 10^{38}, 3.4 \times 10^{38} - 1]$ \\
+            \texttt{double} & 64 bit & $[-1.7 \times 10^{308}, 1.7 \times 10^{308}]$ \\
+            \texttt{char} & 8 bit & $[-2^{7}, 2^{7} - 1]$                          
+        \end{tabular}
+        \egroup
+    \end{table}
+\end{frame}
+    
+\begin{frame}
+    \frametitle{Arithmetic Operators}
+
+    \begin{itemize}
+        \item The name pretty much gives everything away.
+        \item We need to be careful with data types.
+        \item Operators obey the laws of order of operator.
+    \end{itemize}
+
+    \begin{tcolorbox}[title=Operators]
+        \begin{itemize}
+            \item[--] \texttt{10 + 5} $\rightarrow 15$
+            \item[--] \texttt{10 - 5} $\rightarrow 5$
+            \item[--] \texttt{10 * 5} $\rightarrow 50$
+            \item[--] \texttt{10 / 5} $\rightarrow 2$
+            \item[--] \texttt{10 \% 5} $\rightarrow 0$
+        \end{itemize}
+    \end{tcolorbox}
+\end{frame}
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    commentstyle=\color{grey}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{purple} % string color
+}
+
+\begin{frame}[fragile]
+    \frametitle{Lets see the real thing - \texttt{Hello World}}
+
+    \begin{lstlisting}[language=C++]
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout<<"Hello World!"<<endl;
+    return 0;
+}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Flow Control - if, else}
+
+    \begin{lstlisting}[language=C++]
+int main(){
+    int x;
+    cin>>x;
+    if(x < 0){
+        cout<<x<<" is smaller that 0!"<<endl;
+    }
+    else{
+        cout<<x<<" is greater than 0!"<<endl;
+    }
+    return 0;
+}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Flow Control - else if}
+
+    \begin{lstlisting}[language=C++]
+int main(){
+    int x;
+    cin>>x;
+    if(x < 0){
+        cout<<x<<" is smaller that 0!"<<endl;
+    }
+    else if(x == 0){
+        cout<<x<<" is equal to 0!"<<endl;
+    }
+    else{
+        cout<<x<<" is greater than 0!"<<endl;
+    }
+    return 0;
+}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Loops - while}
+
+    \begin{lstlisting}[language=C++]
+int main(){
+    int i = 0;
+    while(i < 5){
+        cout<<i<<' ';
+    }
+    cout<<endl;
+    return 0;
+}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Loops - for}
+
+    \begin{lstlisting}[language=C++]
+int main(){
+    for(int i = 0; i < 5; i++){
+        cout<<i<<' ';
+    }
+    cout<<endl;
+    return 0;
+}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Functions}
+
+    \begin{lstlisting}[language=C++]
+int square(int n){
+    int answer = n*n;
+    return answer;
+}
+
+int main(){
+    cout<<square(5)<<endl;
+    cout<<square(7)<<endl;
+    return 0;
+}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Arrays}
+
+    \begin{lstlisting}[language=C++]
+int main(){ 
+    int arr0[5];
+    int arr1[4] = {1,2,3,4};
+    int arr2[5] = {1,2,3,4};
+ 
+    cout<<arr0[0]<<endl;
+    cout<<arr1[1]<<endl;
+    cout<<arr2[4]<<endl;
+    cout<<arr2[5]<<endl;
+    cout<<arr1[5]<<endl;
+    return 0;  
+}
+    \end{lstlisting}
+\end{frame}
+
+\section{Problems}
+
+\begin{frame}
+    \frametitle{\textit{Ad-Hoc} Solutions}
+
+    \begin{itemize}
+        \item \textit{Ad-Hoc} $\rightarrow$ \textit{For this} in Latin
+        \item This tag is given to solutions that require no prior knowledge.
+        \item They usually do not require a methodical approach.
+        \item Basically the simplest problems.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Problem - Description}
+
+    \textbf{Time Limit:} 1s \\
+    \textbf{Memory Limit:} 256MB
+
+    Diego is about to enter his final maths exam. He has been very lazy throughout the semester, so he needs to get a perfect score or else he will fail the subject. The exam will consist of T questions. In each he will be given a number and he has to determine if it is prime. In an act of compassion the teacher decides that he will allow students to use their computers, but they can not use the internet. 
+
+    Can you write a program to help Diego determine which numbers are prime?
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Problem - I/O}
+
+    \textbf{Input:}
+
+    The first line contains $T$ ($1 \leq T \leq 100$), the number of questions the exam has. The next T lines will have an integer $n$ ($1 \leq n \leq 10^6$) the number Diego has to determine if it is prime.
+
+    \textbf{Output}
+
+    For each question print ``\texttt{T}'' (without the quotation marks) if the number is prime or ``\texttt{F}'' if it isn’t.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Problem - Examples}
+
+    \textbf{Example 1:}
+    \vspace{2mm}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{tcolorbox}[fonttitle=\bfseries, title=Input]
+                1\\
+                104729
+            \end{tcolorbox}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \begin{tcolorbox}[fonttitle=\bfseries, title=Output]
+                T\\
+            \end{tcolorbox}
+        \end{column}
+    \end{columns}
+
+    \vspace{4mm}
+
+    \textbf{Example 2:}
+    \vspace{2mm}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{tcolorbox}[fonttitle=\bfseries, title=Input]
+                3\\
+                22\\
+                3\\
+                49
+            \end{tcolorbox}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \begin{tcolorbox}[fonttitle=\bfseries, title=Output]
+                F\\
+                T\\
+                F\\
+            \end{tcolorbox}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Announcements}
+
+    \textbf{Homework:}
+
+    \textbf{Chats:}
+    \begin{itemize}
+        \item ACM Announcements: \url{https://bit.ly/2V0Sn1w}
+        \item Competitiva UTEC: \url{http://bit.ly/2JGcf2X}
+    \end{itemize}
+\end{frame}
+
+\end{document}
