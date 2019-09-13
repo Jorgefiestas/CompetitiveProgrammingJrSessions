@@ -5,3 +5,6 @@
 *.toc
 *.vrb
 *.snm
+
+*.swp
+.DS_Store
